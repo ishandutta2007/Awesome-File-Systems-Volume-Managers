@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="320" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0d1527"/>
+      <stop offset="100%" stop-color="#0a101d"/>
+    </linearGradient>
+
+    <!-- Neon Accents -->
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="pill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <radialGradient id="glow-cyan" cx="20%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-purple" cx="85%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.7" stroke-opacity="0.3"/>
+    </pattern>
+
+    <style>
+      .glow-pulse-1 {
+        animation: pulse1 6s ease-in-out infinite alternate;
+      }
+      .glow-pulse-2 {
+        animation: pulse2 8s ease-in-out infinite alternate;
+      }
+      .stream-flow {
+        stroke-dasharray: 8 16;
+        animation: dashStream 25s linear infinite;
+      }
+      .stream-flow-rev {
+        stroke-dasharray: 6 18;
+        animation: dashStreamRev 30s linear infinite;
+      }
+      .node-pulse {
+        animation: nodeBlink 3s ease-in-out infinite alternate;
+      }
+      .orbit-spin {
+        transform-origin: 1040px 160px;
+        animation: spinRing 20s linear infinite;
+      }
+      @keyframes pulse1 {
+        0% { opacity: 0.3; transform: scale(0.95); }
+        100% { opacity: 0.8; transform: scale(1.05); }
+      }
+      @keyframes pulse2 {
+        0% { opacity: 0.25; transform: scale(1.02); }
+        100% { opacity: 0.75; transform: scale(0.92); }
+      }
+      @keyframes dashStream {
+        to { stroke-dashoffset: -400; }
+      }
+      @keyframes dashStreamRev {
+        to { stroke-dashoffset: 400; }
+      }
+      @keyframes nodeBlink {
+        0% { opacity: 0.3; transform: scale(0.9); }
+        50% { opacity: 1; transform: scale(1.15); }
+        100% { opacity: 0.4; transform: scale(0.95); }
+      }
+      @keyframes spinRing {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Animated Ambient Glows (Behind all text) -->
+  <circle cx="240" cy="90" r="280" fill="url(#glow-cyan)" class="glow-pulse-1"/>
+  <circle cx="980" cy="220" r="300" fill="url(#glow-purple)" class="glow-pulse-2"/>
+
+  <!-- Technical Grid Overlay -->
+  <rect width="1200" height="320" rx="16" fill="url(#grid)"/>
+
+  <!-- Dynamic Animated Tech Graphics / Storage Ring Architecture (Right Side, Background) -->
+  <g opacity="0.45">
+    <!-- Storage Platter / Volume Ring -->
+    <circle cx="1040" cy="160" r="110" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6"/>
+    <circle cx="1040" cy="160" r="80" stroke="#818cf8" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="1040" cy="160" r="50" stroke="#c084fc" stroke-width="1" stroke-dasharray="4 8" opacity="0.7"/>
+    <circle cx="1040" cy="160" r="22" fill="#0ea5e9" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.5"/>
+
+    <!-- Orbital Storage Nodes -->
+    <g class="orbit-spin">
+      <circle cx="1040" cy="50" r="5" fill="#38bdf8" class="node-pulse"/>
+      <circle cx="1150" cy="160" r="4" fill="#a855f7" class="node-pulse"/>
+      <circle cx="1040" cy="270" r="6" fill="#06b6d4" class="node-pulse"/>
+      <circle cx="930" cy="160" r="4.5" fill="#6366f1" class="node-pulse"/>
+    </g>
+
+    <!-- Data Circuit Streams -->
+    <path d="M 0 60 Q 300 90 600 40 T 1200 70" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.35" class="stream-flow"/>
+    <path d="M 0 260 Q 400 210 800 270 T 1200 240" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.35" class="stream-flow-rev"/>
+  </g>
+
+  <!-- Foreground Content: Pill Badge -->
+  <g transform="translate(60, 42)">
+    <rect width="310" height="28" rx="14" fill="url(#pill-grad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4"/>
+    <circle cx="16" cy="14" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="30" y="18" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">STORAGE &amp; VOLUME ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(60, 116)">
+    <text fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-0.5">
+      Awesome File Systems &amp; Volume Managers
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(60, 154)">
+    <text fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400">
+      Curated directory of CoW File Systems, Snapshotting Engines, Distributed Storage &amp; Enterprise SDS
+    </text>
+  </g>
+
+  <!-- Tech Feature Pills (Foreground) -->
+  <g transform="translate(60, 204)">
+    <!-- Pill 1: OpenZFS -->
+    <g transform="translate(0, 0)">
+      <rect width="105" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="52" y="22" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">⚡ OpenZFS</text>
+    </g>
+    <!-- Pill 2: Btrfs -->
+    <g transform="translate(117, 0)">
+      <rect width="85" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="42" y="22" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🛡️ Btrfs</text>
+    </g>
+    <!-- Pill 3: Ceph / CephFS -->
+    <g transform="translate(214, 0)">
+      <rect width="85" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="42" y="22" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🌐 Ceph</text>
+    </g>
+    <!-- Pill 4: SeaweedFS -->
+    <g transform="translate(311, 0)">
+      <rect width="118" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="59" y="22" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🌊 SeaweedFS</text>
+    </g>
+    <!-- Pill 5: JuiceFS -->
+    <g transform="translate(441, 0)">
+      <rect width="98" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="49" y="22" fill="#fb923c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🥤 JuiceFS</text>
+    </g>
+    <!-- Pill 6: LVM2 / CoW -->
+    <g transform="translate(551, 0)">
+      <rect width="85" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="42" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🗄️ LVM2</text>
+    </g>
+    <!-- Pill 7: bcachefs -->
+    <g transform="translate(648, 0)">
+      <rect width="105" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="52" y="22" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🚀 bcachefs</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Bar -->
+  <rect x="0" y="316" width="1200" height="4" fill="url(#accent-cyan)"/>
+</svg>

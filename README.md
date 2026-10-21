@@ -57,57 +57,57 @@ The following table catalogs the premier managed file system and volume manageme
 
 Explore the most prominent open-source file systems, volume managers, snapshot utilities, and userspace storage frameworks.
 
-Repositories below are sorted in **descending order by GitHub star count**.
+Repositories below are sorted in **descending order by GitHub Stars_Count**.
 
-1. **[SeaweedFS](https://github.com/seaweedfs/seaweedfs)** [![GitHub stars](https://img.shields.io/github/stars/seaweedfs/seaweedfs?style=social&color=white)](https://github.com/seaweedfs/seaweedfs/stargazers)  
+1. **[SeaweedFS](https://github.com/seaweedfs/seaweedfs)** [![GitHub_Stars](https://img.shields.io/github/stars/seaweedfs/seaweedfs?style=social&color=white)](https://github.com/seaweedfs/seaweedfs/stargazers)  
    *Fast, highly scalable distributed storage system for blobs, objects, small files, and billions of large files.* Features a FUSE-based POSIX file system layer, S3 compatibility, dynamic volume rebalancing, tiered storage to public clouds, and append-only disk logging.
 
-2. **[Ceph](https://github.com/ceph/ceph)** [![GitHub stars](https://img.shields.io/github/stars/ceph/ceph?style=social&color=white)](https://github.com/ceph/ceph/stargazers)  
+2. **[Ceph](https://github.com/ceph/ceph)** [![GitHub_Stars](https://img.shields.io/github/stars/ceph/ceph?style=social&color=white)](https://github.com/ceph/ceph/stargazers)  
    *Unified, distributed storage cluster providing object (RGW), block device (RBD), and POSIX file system (CephFS) access.* Employs the CRUSH algorithm for decentralized, client-driven data placement without a single metadata bottleneck, delivering exabyte-scale fault tolerance and automatic healing.
 
-3. **[JuiceFS](https://github.com/juicedata/juicefs)** [![GitHub stars](https://img.shields.io/github/stars/juicedata/juicefs?style=social&color=white)](https://github.com/juicedata/juicefs/stargazers)  
+3. **[JuiceFS](https://github.com/juicedata/juicefs)** [![GitHub_Stars](https://img.shields.io/github/stars/juicedata/juicefs?style=social&color=white)](https://github.com/juicedata/juicefs/stargazers)  
    *High-performance POSIX-compatible distributed file system optimized for cloud-native and AI/ML workloads.* Decouples metadata engines (backed by Redis, MySQL, SQLite, or TiKV) from data chunk storage (persisted on Amazon S3, MinIO, Ceph, or Google Cloud Storage).
 
-4. **[Rook](https://github.com/rook/rook)** [![GitHub stars](https://img.shields.io/github/stars/rook/rook?style=social&color=white)](https://github.com/rook/rook/stargazers)  
+4. **[Rook](https://github.com/rook/rook)** [![GitHub_Stars](https://img.shields.io/github/stars/rook/rook?style=social&color=white)](https://github.com/rook/rook/stargazers)  
    *Cloud-Native Storage Orchestrator for Kubernetes.* Turns distributed storage engines (Ceph) into self-managing, self-scaling, and self-healing Kubernetes custom resources with automated CRD volume provisioning, snapshot management, and disaster recovery.
 
-5. **[OpenZFS](https://github.com/openzfs/zfs)** [![GitHub stars](https://img.shields.io/github/stars/openzfs/zfs?style=social&color=white)](https://github.com/openzfs/zfs/stargazers)  
+5. **[OpenZFS](https://github.com/openzfs/zfs)** [![GitHub_Stars](https://img.shields.io/github/stars/openzfs/zfs?style=social&color=white)](https://github.com/openzfs/zfs/stargazers)  
    *The gold standard in combined file system and logical volume management for Linux and FreeBSD.* Features copy-on-write transactional updates, 256-bit cryptographic data checksumming to eradicate silent data corruption (bit rot), RAID-Z (1/2/3), writable snapshots and clones, native encryption, and `zfs send`/`receive` streaming replication.
 
-6. **[s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse)** [![GitHub stars](https://img.shields.io/github/stars/s3fs-fuse/s3fs-fuse?style=social&color=white)](https://github.com/s3fs-fuse/s3fs-fuse/stargazers)  
+6. **[s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse)** [![GitHub_Stars](https://img.shields.io/github/stars/s3fs-fuse/s3fs-fuse?style=social&color=white)](https://github.com/s3fs-fuse/s3fs-fuse/stargazers)  
    *FUSE-based file system interface backed by Amazon S3 or S3-compatible object buckets.* Allows remote object stores to be mounted locally with POSIX-subset compatibility, client-side caching, multipart uploads, and server-side encryption.
 
-7. **[OpenEBS](https://github.com/openebs/openebs)** [![GitHub stars](https://img.shields.io/github/stars/openebs/openebs?style=social&color=white)](https://github.com/openebs/openebs/stargazers)  
+7. **[OpenEBS](https://github.com/openebs/openebs)** [![GitHub_Stars](https://img.shields.io/github/stars/openebs/openebs?style=social&color=white)](https://github.com/openebs/openebs/stargazers)  
    *Leading Kubernetes Container Attached Storage (CAS) platform.* Provides dynamic local volume provisioning, ZFS-backed local PV engines, Mayastor NVMe-oF low-latency replicated block storage, and thin-provisioned persistent volumes.
 
-8. **[WinFsp](https://github.com/winfsp/winfsp)** [![GitHub stars](https://img.shields.io/github/stars/winfsp/winfsp?style=social&color=white)](https://github.com/winfsp/winfsp/stargazers)  
+8. **[WinFsp](https://github.com/winfsp/winfsp)** [![GitHub_Stars](https://img.shields.io/github/stars/winfsp/winfsp?style=social&color=white)](https://github.com/winfsp/winfsp/stargazers)  
    *Windows File System Proxy (FUSE for Windows).* A high-performance kernel driver and runtime that empowers developers to build user-mode file systems and virtual volume mounts on Microsoft Windows with native NT security semantics.
 
-9. **[Longhorn](https://github.com/longhorn/longhorn)** [![GitHub stars](https://img.shields.io/github/stars/longhorn/longhorn?style=social&color=white)](https://github.com/longhorn/longhorn/stargazers)  
+9. **[Longhorn](https://github.com/longhorn/longhorn)** [![GitHub_Stars](https://img.shields.io/github/stars/longhorn/longhorn?style=social&color=white)](https://github.com/longhorn/longhorn/stargazers)  
    *Cloud-Native distributed block storage platform built for Kubernetes by Rancher/SUSE.* Features microservices-based controller engines, thin provisioning, volume snapshot schedules, asynchronous backup to secondary object stores, and cross-cluster volume migration.
 
-10. **[libfuse](https://github.com/libfuse/libfuse)** [![GitHub stars](https://img.shields.io/github/stars/libfuse/libfuse?style=social&color=white)](https://github.com/libfuse/libfuse/stargazers)  
+10. **[libfuse](https://github.com/libfuse/libfuse)** [![GitHub_Stars](https://img.shields.io/github/stars/libfuse/libfuse?style=social&color=white)](https://github.com/libfuse/libfuse/stargazers)  
     *The canonical reference implementation for Linux Filesystem in Userspace (FUSE).* Enables unprivileged processes to create and mount fully functional file systems without modifying the Linux kernel.
 
-11. **[GlusterFS](https://github.com/gluster/glusterfs)** [![GitHub stars](https://img.shields.io/github/stars/gluster/glusterfs?style=social&color=white)](https://github.com/gluster/glusterfs/stargazers)  
+11. **[GlusterFS](https://github.com/gluster/glusterfs)** [![GitHub_Stars](https://img.shields.io/github/stars/gluster/glusterfs?style=social&color=white)](https://github.com/gluster/glusterfs/stargazers)  
     *Scalable, distributed network-attached file system that aggregates commodity hardware disks into unified storage pools.* Supports POSIX semantics over TCP/IP or RDMA, geo-replication, distributed striping, and elastic volume expansion.
 
-12. **[Sanoid & Syncoid](https://github.com/jimsalterjrs/sanoid)** [![GitHub stars](https://img.shields.io/github/stars/jimsalterjrs/sanoid?style=social&color=white)](https://github.com/jimsalterjrs/sanoid/stargazers)  
+12. **[Sanoid & Syncoid](https://github.com/jimsalterjrs/sanoid)** [![GitHub_Stars](https://img.shields.io/github/stars/jimsalterjrs/sanoid?style=social&color=white)](https://github.com/jimsalterjrs/sanoid/stargazers)  
     *Policy-driven snapshot management and replication orchestration engine for OpenZFS and Btrfs pools.* Automatically generates and prunes hourly, daily, weekly, and monthly snapshots while `syncoid` handles point-to-point incremental replication over SSH tunnels.
 
-13. **[Snapper](https://github.com/openSUSE/snapper)** [![GitHub stars](https://img.shields.io/github/stars/openSUSE/snapper?style=social&color=white)](https://github.com/openSUSE/snapper/stargazers)  
+13. **[Snapper](https://github.com/openSUSE/snapper)** [![GitHub_Stars](https://img.shields.io/github/stars/openSUSE/snapper?style=social&color=white)](https://github.com/openSUSE/snapper/stargazers)  
     *System snapshot and rollback management tool developed by openSUSE.* Designed for Btrfs subvolumes and thin-provisioned LVM snapshots, generating pre- and post-snapshots during package manager executions (`zypper`, `apt`, `dnf`) with full point-in-time state rollbacks.
 
-14. **[btrfs-progs](https://github.com/kdave/btrfs-progs)** [![GitHub stars](https://img.shields.io/github/stars/kdave/btrfs-progs?style=social&color=white)](https://github.com/kdave/btrfs-progs/stargazers)  
+14. **[btrfs-progs](https://github.com/kdave/btrfs-progs)** [![GitHub_Stars](https://img.shields.io/github/stars/kdave/btrfs-progs?style=social&color=white)](https://github.com/kdave/btrfs-progs/stargazers)  
     *Official userspace toolchain for Btrfs, Linux's native Copy-on-Write file system.* Manages subvolumes, software RAID-0/1/10/5/6, online defragmentation, background scrub routines, snapshot creation, and filesystem resizing without taking volumes offline.
 
-15. **[e2fsprogs](https://github.com/tytso/e2fsprogs)** [![GitHub stars](https://img.shields.io/github/stars/tytso/e2fsprogs?style=social&color=white)](https://github.com/tytso/e2fsprogs/stargazers)  
+15. **[e2fsprogs](https://github.com/tytso/e2fsprogs)** [![GitHub_Stars](https://img.shields.io/github/stars/tytso/e2fsprogs?style=social&color=white)](https://github.com/tytso/e2fsprogs/stargazers)  
     *Core Linux utilities for ext2, ext3, and ext4 file systems.* Provides essential maintenance utilities including `e2fsck`, `mke2fs`, `tune2fs`, and `resize2fs`, safeguarding Linux's most widely deployed default journaling file system.
 
-16. **[bcachefs-tools](https://github.com/koverstreet/bcachefs-tools)** [![GitHub stars](https://img.shields.io/github/stars/koverstreet/bcachefs-tools?style=social&color=white)](https://github.com/koverstreet/bcachefs-tools/stargazers)  
+16. **[bcachefs-tools](https://github.com/koverstreet/bcachefs-tools)** [![GitHub_Stars](https://img.shields.io/github/stars/koverstreet/bcachefs-tools?style=social&color=white)](https://github.com/koverstreet/bcachefs-tools/stargazers)  
     *Userspace management suite for bcachefs, the modern Linux CoW file system mainlined in Linux 6.7.* Delivers multi-tier device allocation (caching on NVMe, archiving on HDDs), checksumming, compression, erasure coding, and snapshotting.
 
-17. **[LVM2 (Logical Volume Manager)](https://github.com/lvmteam/lvm2)** [![GitHub stars](https://img.shields.io/github/stars/lvmteam/lvm2?style=social&color=white)](https://github.com/lvmteam/lvm2/stargazers)  
+17. **[LVM2 (Logical Volume Manager)](https://github.com/lvmteam/lvm2)** [![GitHub_Stars](https://img.shields.io/github/stars/lvmteam/lvm2?style=social&color=white)](https://github.com/lvmteam/lvm2/stargazers)  
     *Standard Linux volume abstraction framework.* Translates physical block devices into flexible Volume Groups (VGs) and Logical Volumes (LVs), supporting thin provisioning, copy-on-write snapshotting, RAID pooling, and live volume resizing.
 
 ---
